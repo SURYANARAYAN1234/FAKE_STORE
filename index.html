@@ -18,6 +18,7 @@
                     var option=document.createElement("option");
                     option.text=item.toUpperCase();
                     option.value=item;
+                    
                     document.getElementById("lstCategories").appendChild(option);
                 }
             })
@@ -105,7 +106,7 @@
                     var div=document.createElement("div");
                     div.className="card m-2 p-2";
                     div.style.width="170px";
-                    div.style.height="350px";
+                    div.style.height="395px";
                     div.innerHTML=`
                     <img src=${items.image} class="card-img-top" height="100px">
                     <div class="card-header" style="height:180px">
@@ -115,8 +116,8 @@
                         <span>PRICE=></span><span>${items.price}</span>
                       
                     </div>
-                    <div class="card-footer">
-                        <button class="btn btn-danger w-100" onclick="removeCart()" ><span class="bi bi-trash"></button>
+                    <div class="card-footer h-50">
+                        <button class="btn btn-danger w-100 " onclick="removeCart()" ><span class="bi bi-trash"></button>
                       </div>
                     `;
                     document.getElementById("k").appendChild(div);
